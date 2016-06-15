@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Quizz Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <script src="js/javao.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="escala.html">Richter</a>
+                    </li>
+                    <li>
+                        <a href="geo.html">Geometria</a>
+                    </li>
+                    <li>
+                        <a href="didatica.html">Quizz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Quizz Web!</h3>
+        <img src="images/quiz.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Quiz" width="350" height="350">
+        <h3>Descubra se é capaz!</h3>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">Treine Raciocínio</h3>
+        <p>Para jogar, basta clicar na imagem correspondente que não pertence ao grupo em questão. São 4 grupos distintos. Boa Sorte! </p>
+    </div>
+
+    <!-- INICIO DO PRIMEIRO GRUPO DE RADIO -->
+    <form name="form1" id="meuForm" method="post" onSubmit="createArray(); return validateForm1() ">
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">  Selecione a imagem que nao pertence ao primeiro grupo:</h3>
+            <br/>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/batata.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="a" type="radio" value="Batata"> Batata:
+                </div>
+                <br/>
+
+                <div class="col-sm-4">
+                    <img src="images/cenoura.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="a" type="radio" value="Cenoura"> Cenoura:
+                </div>
+                <br/>
+
+                <div class="col-sm-4">
+                    <img src="images/mandioca.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="a" type="radio" value="Mandioca"> Mandioca:
+                </div>
+                <br/>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <img src="images/arroz.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="a" type="radio" value="Arroz"> Arroz:
+                    </div>
+                    <br/>
+
+                    <div class="col-sm-4">
+                        <img src="images/feijao.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="a" type="radio" value="Feijao"> Feijao:
+
+                    </div>
+                    <br/>
+
+                    <div class="col-sm-4">
+                        <img src="images/sabonete.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="a" type="radio" value="Sabonete"> Sabonete:
+
+                    </div>
+                    <br/>
+                </div>
+                <br/>
+                <p>
+                    <br/>
+                    <input type="submit" value="Testar">
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- FIM DO PRIMEIRO -->
+
+    <!-- INICIO DO SEGUNDO GRUPO DE RADIO -->
+    <form name="form2" id="meuForm" method="post" onSubmit="createArray(); return validateForm2() ">
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">  Selecione a imagem que nao pertence ao segundo grupo:</h3>
+            <br/>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/carro.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="b" type="radio" value="Carro"> Carro:
+                </div>
+                <br/>
+
+                <div class="col-sm-4">
+                    <img src="images/moto.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="b" type="radio" value="Moto"> Moto:
+                </div>
+                <br/>
+
+                <div class="col-sm-4">
+                    <img src="images/caminhao.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="b" type="radio" value="Caminhao"> Caminhão:
+                </div>
+                <br/>
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <img src="images/trator.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="b" type="radio" value="Trator"> Trator:
+                    </div>
+                    <br/>
+
+                    <div class="col-sm-4">
+                        <img src="images/bicicleta.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="b" type="radio" value="Bicicleta"> Biciclieta:
+
+                    </div>
+                    <br/>
+
+                    <div class="col-sm-4">
+                        <img src="images/algodao.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="b" type="radio" value="Algodao"> Algodão Doce:
+                    </div>
+                    <br/>
+                </div>
+                <br/>
+                <p>
+                    <br/>
+                    <input type="submit" value="Testar">
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- FIM DO SEGUNDO -->
+
+    <!-- INICIO DO TERCEIRO -->
+    <form name="form3" id="meuForm" method="post" onSubmit="createArray(); return validateForm3() ">
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">  Selecione a imagem que nao pertence ao terceiro grupo:</h3>
+            <br/>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/oculos.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="c" type="radio" value="Oculos"> Óculos:
+                </div>
+                <br/>
+                <div class="col-sm-4">
+                    <img src="images/cadeira.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="c" type="radio" value="Cadeira"> Cadeira de Praia:
+                </div>
+                <br/>
+                <div class="col-sm-4">
+                    <img src="images/sombrinha.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="c" type="radio" value="Sombrinha"> Sombrinha:
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/maquina.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="c" type="radio" value="Maquina"> Máquina de Lavar:
+                    </div>
+                    <br/>
+                    <div class="col-sm-4">
+                        <img src="images/tanquinho.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="c" type="radio" value="Tanquinho"> Tanquinho:
+                    </div>
+                    <br/>
+                    <div class="col-sm-4">
+                        <img src="images/guardasol.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="c" type="radio" value="Guarda"> Guarda Sol:
+                    </div>
+                    <br/>
+                </div>
+                <br/>
+                <p>
+                    <br/>
+                    <input type="submit" value="Testar">
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- FIM DO TERCEIRO -->
+
+    <!-- INICIO DO QUARTO -->
+    <form name="form4" id="meuForm" method="post" onSubmit="createArray(); return validateForm4() ">
+        <div class="container-fluid bg-3 text-center">
+            <h3 class="margin">  Selecione a imagem que nao pertence ao quarto grupo:</h3>
+            <br/>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/bola.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="d" type="radio" value="Bola"> Bola:
+                </div>
+                <br/>
+                <div class="col-sm-4">
+                    <img src="images/skate.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="d" type="radio" value="Skate"> Skate:
+                </div>
+                <br/>
+                <div class="col-sm-4">
+                    <img src="images/patins.jpg" class="img-responsive margin" style="width:80%">
+                    <input name="d" type="radio" value="Patins"> Patins:
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/chave.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="d" type="radio" value="Chave"> Chave de Fenda:
+                    </div>
+                    <br/>
+                    <div class="col-sm-4">
+                        <img src="images/bolabasquete.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="d" type="radio" value="BolaDeBasquete"> Bola de Basquete:
+                    </div>
+                    <br/>
+                    <div class="col-sm-4">
+                        <img src="images/raquete.jpg" class="img-responsive margin" style="width:80%">
+                        <input name="d" type="radio" value="Raquete"> Raquete:
+                    </div>
+                    <br/>
+                </div>
+                <br/>
+                <p>
+                    <br/>
+                    <input type="submit" value="Testar">
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- FIM DO QUARTO -->
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p>Guilherme Jannotti - UFOP ICEA <a href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web I</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Quizz Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <script src="js/richter.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="escala.html">Richter</a>
+                    </li>
+                    <li>
+                        <a href="geo.html">Geometria</a>
+                    </li>
+                    <li>
+                        <a href="didatica.html">Quizz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <center><b><h2> Escala <br>Richter </h2></center></b>
+            <form name="indice">
+                <table>
+                    <tr>
+                        <center>Amplitude:
+                            <input type="text" name="amplitude" class="form-control" id="amp" placeholder="Digite a amplitude" />
+                        </center>
+                    </tr>
+
+                    <tr>
+                        <center>Distancia entre P e S:
+                            <input type="text" name="intervalo" class="form-control" id="temp" placeholder="Digite a distencia" />
+                        </center>
+                    </tr>
+                </table>
+                <br>
+
+                <center>
+                    <button type="button" class="btn btn-primary" onclick="calcula()">Calcular</button>
+                </center>
+                <br>
+
+                <center>
+                    <h4>Resultado:</h4>
+                </center>
+
+                <center>
+                    <input type="text" readonly="readonly" name="resultado" class="form-control input-lg" id="res" />
+                </center>
+                <br>
+                <center><img src="images/richter.jpg" width="580px" /></center>
+
+            </form>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <p>Guilherme Jannotti - UFOP ICEA <a href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web I</a></p>
+    </footer>
+</body>
+
+</html>

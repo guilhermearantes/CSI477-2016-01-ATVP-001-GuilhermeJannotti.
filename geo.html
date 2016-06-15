@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Quizz Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <script src="js/geo.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="escala.html">Richter</a>
+                    </li>
+                    <li>
+                        <a href="geo.html">Geometria</a>
+                    </li>
+                    <li>
+                        <a href="didatica.html">Quizz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center">
+        <div class="row">
+
+            <table>
+                <tr>
+                    <center>
+                        <div>
+                            <img src="images/triangulo.jpg" class="img-responsive margin" style="width:30%">
+                            <input name="a" type="radio" value="Quadrado"> Quadrado:
+                            <input name="a" type="radio" value="Retangulo"> Retangulo:
+                            <input name="a" type="radio" value="Circulo"> Circulo:
+                            <input name="a" type="radio" value="Triangulo"> Triangulo:
+                            <p>
+                                <br/>
+                                <input type="submit" value="Testar" onclick="validateForm1();">
+                            </p>
+                        </div>
+                        <br/>
+
+                    </center>
+                </tr>
+
+                <tr>
+                    <center>
+                        <div>
+                            <img src="images/quadrado.jpg" class="img-responsive margin" style="width:30%">
+                            <input name="b" type="radio" value="Quadrado"> Quadrado:
+                            <input name="b" type="radio" value="Retangulo"> Retangulo:
+                            <input name="b" type="radio" value="Circulo"> Circulo:
+                            <input name="b" type="radio" value="Triangulo"> Triangulo:
+                            <p>
+                                <br/>
+                                <input type="submit" value="Testar" onclick="validateForm2();">
+                                
+                            </p>
+                                                           <br/>
+                               <br/>
+
+                        </div>
+                    </center>
+                </tr>
+                <tr>
+                    <center>
+                        <div>
+                            <img src="images/circulo.jpg" class="img-responsive margin" style="width:30%">
+                            <input name="c" type="radio" value="Quadrado"> Quadrado:
+                            <input name="c" type="radio" value="Retangulo"> Retangulo:
+                            <input name="c" type="radio" value="Circulo"> Circulo:
+                            <input name="c" type="radio" value="Triangulo"> Triangulo:
+                            <p>
+                                <br/>
+                                <input type="submit" value="Testar" onclick="validateForm3();">
+                            </p>
+                        </div>
+                    </center>
+                </tr>
+
+                <tr>
+                    <center>
+                        <div>
+                            <img src="images/retangulo.jpg" class="img-responsive margin" style="width:30%">
+                            <input name="d" type="radio" value="Quadrado"> Quadrado:
+                            <input name="d" type="radio" value="Retangulo"> Retangulo:
+                            <input name="d" type="radio" value="Circulo"> Circulo:
+                            <input name="d" type="radio" value="Triangulo"> Triangulo:
+                            <p>
+                                <br/>
+                                <input type="submit" value="Testar" onclick="validateForm4();">
+                            </p>
+                        </div>
+                    </center>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <p>Guilherme Jannotti - UFOP ICEA <a href="https://sites.google.com/site/fboliveiraufop/disciplinas---2015-02/cea477---sistemas-para-a-web">Sistemas Web I</a></p>
+    </footer>
+</body>
+
+</html>
